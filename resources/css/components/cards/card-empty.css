@@ -1,0 +1,11 @@
+.card-empty {
+    width: 356px;
+    /* height: 56px; */
+    border: 1px solid var(--white-color);
+    padding: var(--spacing-3) var(--spacing-4);
+    border-radius: 5px;
+
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-3);
+}

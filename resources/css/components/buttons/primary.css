@@ -1,0 +1,22 @@
+.primary-button {
+    width: 100%;
+    min-width: 256px;
+    height: 48px;
+    background-color: var(--primary-color);
+    border-radius: 20px;
+    padding: 0 var(--spacing-4);
+    color: #FFF;
+    transition: transform 0.2s ease;
+
+    &.sec {
+        background-color: #09A2E4;
+    }
+
+    &.bg-gray-500 {
+        background-color: #6B7280; /* Cor cinza para indicar clique */
+    }
+
+    &:hover {
+        transform: scale(1.05); /* Cresce o botão em 5% */
+    }
+}

@@ -1,0 +1,18 @@
+.navigation {
+    background-color: var(--primary-color);
+
+
+    & .primary-nav {
+        max-width: 80rem;
+        padding-inline: var(--spacing-4);
+        margin-inline: auto;
+
+        @media (min-width: 640px) {
+            padding-inline: var(--spacing-6);
+        }
+
+        @media(min-width: 1024px) {
+            padding-inline: var(--spacing-8);
+        }
+    }
+}

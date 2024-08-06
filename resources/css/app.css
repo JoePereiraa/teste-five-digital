@@ -1,0 +1,11 @@
+
+@import './tailwind.css';
+@import './settings/@index.css';
+@import './layouts/Guess.css';
+@import './layouts/homepage.css';
+@import './layouts/navigation.css';
+@import './components/index.css';
+@import './errors/page404.css';
+
+
+

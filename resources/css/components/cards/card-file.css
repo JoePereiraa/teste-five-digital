@@ -1,0 +1,58 @@
+.card-file {
+    display: flex;
+    flex-direction: column;
+
+    & .cf-content {
+        /* background-color: var(--primary-color); */
+        background-color: #1f1f1f;
+        border-radius: 10px 10px 0 0;
+        flex-grow: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    & .cf-actions {
+        display: flex;
+        justify-content: space-between;
+
+
+        button {
+            width: 100px;
+            padding: var(--spacing-3) 0;
+            border-radius: 0 0 8px 8px;
+            transition: 0.3s linear;
+
+            &.btn-approve {
+                background-color: var(--primary-color);
+            }
+
+            &.btn-reject {
+                background-color: #ec1e1e;
+            }
+
+            &:hover {
+                background-color: gray;
+            }
+        }
+    }
+
+    & .cf-footer {
+        height: 48px;
+        background-color: #1f1f1f;
+        /* border-radius: 8px 8px 0 0; */
+        padding: var(--spacing-3);
+
+        font-size: 12px;
+    }
+
+    @media(min-width: 175px) {
+        width: 155px;
+        min-height: 200px;
+    }
+
+    @media(min-width: 1024px) {
+        width: 206px;
+        min-height: 200px;
+    }
+}

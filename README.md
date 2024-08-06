@@ -30,7 +30,7 @@ REDIS_PASSWORD=null
 REDIS_PORT=6379
 ```
 
-#Para a conexão com o AWS BUCKET - S3 !OBRIGATORIO
+Para a conexão com o AWS BUCKET - S3 !OBRIGATORIO
 ```dosini
 AWS_ACCESS_KEY_ID=
 AWS_SECRET_ACCESS_KEY=
@@ -62,3 +62,7 @@ php artisan key:generate
 
 Acessar o projeto
 [http://localhost:8000](http://localhost:8000)
+
+# Previews 
+
+![Rota Inicial](public/images/previews/inicio.png)

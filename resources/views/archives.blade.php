@@ -10,7 +10,7 @@
             <div class="bg-white dark:bg-gray-800 overflow-hidden shadow-sm sm:rounded-lg">
                 <div class="p-6 text-gray-900 dark:text-gray-100 flex gap-4 flex-wrap justify-center">
                     @forelse($files as $file)
-                        <x-cards.file.root>
+                        <x-cards.file.root variation="type-2">
                             <x-cards.file.content />
                             <x-cards.file.footer
                                 title="{{ Str::limit($file->original_name, 20) }}"

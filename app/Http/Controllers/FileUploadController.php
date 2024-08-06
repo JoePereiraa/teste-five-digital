@@ -46,8 +46,13 @@ class FileUploadController extends Controller
     {
         $fileUpload = FileUpload::findOrFail($id);
 
-        $fileUpload->status = 'rejected';
-        $fileUpload->save();
+        $filePath = $fileUpload->file_path;
+
+        if(Storage::disk('s3')->exists($filePath)) {
+            Storage::disk('s3')->delete($filePath);
+        }
+
+        $fileUpload->delete();
 
         return back()->with('success', 'Arquivo rejeitado com sucesso.');
     }

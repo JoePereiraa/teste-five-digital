@@ -46,13 +46,35 @@
         font-size: 12px;
     }
 
+    &.type-2 {
+        & .cf-content {
+            background-color: var(--primary-color);
+        }
+
+        & .cf-footer {
+            border-radius: 0 0 5px 5px;
+        }
+    }
+
     @media(min-width: 175px) {
         width: 155px;
         min-height: 200px;
+
+        & .cf-actions {
+            button {
+                width: 75px;
+            }
+        }
     }
 
     @media(min-width: 1024px) {
         width: 206px;
         min-height: 200px;
+
+        & .cf-actions {
+            button {
+                width: 100px;
+            }
+        }
     }
 }

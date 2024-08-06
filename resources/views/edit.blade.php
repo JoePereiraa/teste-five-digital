@@ -24,7 +24,7 @@
                             />
                         </x-cards.file.root>
                     @empty
-                        <x-cards.empty.root text="Nenhum arquivo disponível"/>
+                        <x-cards.empty.root text="Nenhum arquivo disponível para ser aprovado"/>
                     @endforelse
                 </div>
             </div>
